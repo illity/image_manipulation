@@ -1,6 +1,10 @@
+# -*- coding: utf-8 -*-
+#Created By  : Illity
+#Created Date: 25/02/2020
+#Version     : 1.0
+
 import numpy as np
 import cv2
-tilesz=(20,20)
 
 def square(r,g,b):
     img=np.zeros((20,20,3),dtype='uint8')
@@ -55,6 +59,7 @@ blue=square(0,69,173)
 white=square(255,255,255)
 yellow=square(255,213,0)
 orange=square(255,89,0)
+tilesz=(20,20)
 cube=[green,red,blue,white,yellow,orange]
 imgsz=(96,40)
 original=cv2.resize(cv2.imread(filename),imgsz)
